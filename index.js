@@ -1,9 +1,10 @@
 const express = require('express')
 const mysql = require('mysql')
-
+const cors = require('cors')
 const app = express()
 
 app.use(express.json())
+app.use(cors())
 
 const conn = mysql.createConnection({
      host:'blzanf3hq3wss8xldrnk-mysql.services.clever-cloud.com',
